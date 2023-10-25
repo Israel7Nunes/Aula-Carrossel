@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: font1;
+    src: url(fonts/Japanese\ 3017.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background: #c5c5c5;
+}
+
+header{
+    background-color: #a9a9a9;
+    margin-top: 1%;
+    margin-left: 40%;
+    margin-right: 40%;
+    border-radius: 5px;
+}
+
+h1{
+    text-align: center;
+    text-shadow: 2px 2px 3px #4d4d4d;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container{
+    height: 460px;
+    width: 800px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 8px;
+}
+
+.imagem img{
+    height: 100%;
+    width: 100%;
+}
+
+.bar{
+    background-color: #c5e5e9;
+    width: 30px;
+    height: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.navegacao{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    
+}
+
+.bar:hover{
+    background: #839bbe;
+}
+
+input{
+    display: none;
+}
+
+.imagens{
+    display: flex;
+    height: 100%;
+    width: 600%;
+}
+
+.imagem{
+    width: 16.6666666667%;
+    transition: 1.2s;
+}
+
+#imagem1:checked ~ .img1{
+    margin-left: 0;
+}
+
+#imagem2:checked ~ .img1{
+    margin-left: -16.6666666667%;
+}
+
+#imagem3:checked ~ .img1{
+    margin-left: -33.3333333333%;
+}
+
+#imagem4:checked ~ .img1{
+    margin-left: -50%;
+}
+
+#imagem5:checked ~ .img1{
+    margin-left: -66.6666666667%;
+}
+
+#imagem6:checked ~ .img1{
+    margin-left: -83.3333333333%;
+}
+
+footer{
+    position: absolute;
+    bottom: 0px;
+    background-color: #606060;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+body h2{
+    text-align: center;
+    margin: 10px;
+    color: #ffffff;
+}
